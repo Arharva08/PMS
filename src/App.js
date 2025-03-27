@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MaintenanceRequests from "./components/MaintenanceRequests";
+import LeaseManagement from "./components/LeaseManagement";
+import ProfileSection from "./components/ProfileSection";
+import LoginPage from "./components/LoginPage";
+import RegistrationPage from "./components/RegistrationPage";
+import Navbar from "./components/navbar";
+import PropertyOwnerDashboard from "./components/PropertyOwnerDashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <LeaseManagement/> */}
+      {/* <MaintenanceRequests isOwner={true} /> */}
+      {/* <ProfileSection/> */}
+      {/* <LoginPage/> */}
+      {/* <RegistrationPage/> */}
+      <Navbar/>
+      <PropertyOwnerDashboard/>
     </div>
   );
-}
+};
 
 export default App;
